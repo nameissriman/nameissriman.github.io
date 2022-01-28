@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>ImageMap</title>
+    </head>
+    <body>
+        <p><a href="index.html">Back to home page</a></p>
+        <h1>Map of Chicago City</h1>
+        <img src="chicago map.PNG" usemap="#map" />
+
+        <map name="map">
+            <area shape="rect" coords="200,275,400,460" target="audio" href="Audio/UIC.m4a" />
+            <area shape="poly" coords="197,90,312,87,314,149,468,149,470,263,153,271,199,209,202,206" target="audio"  href="Audio/West Loop.m4a" />
+            <area shape="poly" coords="396,274,682,274,677,342,772,385,759,550,539,551,515,496,482,493,445,550,407,548" target="audio" href="Audio/SouthLoop.m4a" />
+            <area shape="poly" coords="466,147,485,129,562,128,580,112,587,166,687,166,685,273,471,266" target="audio" href="Audio/DowntownChicago.m4a" />
+            <area shape="poly" coords="26,496,124,466,398,465,403,589,332,612,297,609,205,679,117,711,32,710" target="audio" href="Audio/HeartOfChicago.m4a" />
+            <area shape="poly" coords="220,708,210,686,300,614,329,615,406,596,433,623,474,625,470,708" target="audio" href="Audio/Bridgeport.m4a" />
+            <area shape="poly" coords="191,87,200,209,150,273,22,273,22,93" target="audio" href="Audio/UnitedCenterPark.m4a" />
+            <area shape="poly" coords="409,19,575,15,580,107,560,130,481,127,464,148,462,143,465,146" target="audio" href="Audio/Rivernorth.m4a" />
+            <area shape="poly" coords="577,17,580,109,831,90,825,11,581,2,579,9" target="audio" href="Audio/NavyPier.m4a" />
+            <area shape="poly" coords="405,558,446,557,492,495,522,494,548,615,434,627,406,592" target="audio" href="Audio/ChinaTown.m4a" />
+            <area shape="poly" coords="20,3,20,86,340,81,260,4" target="audio" href="Audio/West Town.m4a" />
+        </map>
+        <iframe name="audio" style="display:none;"></iframe>
+    </body>
+</html>
