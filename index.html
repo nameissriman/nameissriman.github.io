@@ -1,18 +1,107 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>My first web page</title>
-        </head>
-<body>
-
-<h1>Sriman Thirunagaru</h1>
-<p><a href="https://nameissriman.github.io/Assignment0.html">Assignment 0</a></p>
-
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <title>My Home Page</title>
+    <script src="https://kit.fontawesome.com/58b4d12122.js" crossorigin="anonymous"></script>
+    <style>
+    /* body {
+        background-color: yellow;
+         }
+    @media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+         }
+    } */
+    #myVideo {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        }
+    .viewport-header{
+        position: relative;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 230px;
+  left: 350px; 
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+    } 
+    #h2{
+       font-size: 20px; 
+       position: fixed;
+       top: 300px;
+       left: 354px;
+    }   
+    #menu1{
+       font-size: 15px; 
+       position: fixed;
+       top: 70px;
+       left: 1050px;
+       color: white;
+    }
 
+    #menu2{
+       font-size: 15px; 
+       position: fixed;
+       top: 100px;
+       left: 1050px;
+       color: white;
+    }
 
+    #menu3{
+       font-size: 15px; 
+       position: fixed;
+       top: 130px;
+       left: 1050px;
+       color: white;
+    }
+
+    #menu4{
+       font-size: 15px; 
+       position: fixed;
+       top: 160px;
+       left: 1050px;
+       color: white;
+    }
+    </style>
+</head>
+<body>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="background.mp4" type="video/mp4">
+        <source src="background.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    <div>
+      <div>  
+      <header class="viewport-header">
+        <h1>
+          Sriman Thirunagaru  </br>
+          
+        </h1>
+        <p id="h2">Here is my home page</p>
+        
+      </header>
+      </div>
+      <div>
+      <!-- <i class="fa-address-card" ></i> -->
+      
+      <i class="fa-solid fa-user" id="menu1"> About me</i>
+      <i class="fa-solid fa-file" id="menu2"> <a href="files/Sriman_Resume.pdf">Resume</a></i>
+      <i class="fa-solid fa-hashnode" id="menu3"> Hobbies</i>
+      <i class="fa-solid fa-briefcase" id="menu4"> Work</i>
+      </div>
+    </div>
+    
 </body>
-</html>
+</html> 
+
