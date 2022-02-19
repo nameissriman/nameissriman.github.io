@@ -1,107 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>My Home Page</title>
-    <script src="https://kit.fontawesome.com/58b4d12122.js" crossorigin="anonymous"></script>
-    <style>
-    /* body {
-        background-color: yellow;
-         }
-    @media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-         }
-    } */
-    #myVideo {
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://kit.fontawesome.com/58b4d12122.js" crossorigin="anonymous"></script>
+
+
+<style>
+
+body {
+  background-image: url('background1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}  
+
+/* #myVideo {
         object-fit: cover;
         width: 100vw;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
-        }
-    .viewport-header{
-        position: relative;
-  height: 100vh;
-  display: flex;
-  position: fixed;
-  top: 230px;
-  left: 350px; 
+        } */
+
+.container {
+        position: absolute;
+        color: white;
+}
+
+.intro{
+        margin-top: 30%;
+        margin-left: 4%;
+}
+
+.menu{
+        padding: 50px;   
+}
+.list{
+  list-style: none;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-    } 
-    #h2{
-       font-size: 20px; 
-       position: fixed;
-       top: 300px;
-       left: 354px;
-    }   
-    #menu1{
-       font-size: 15px; 
-       position: fixed;
-       top: 70px;
-       left: 1050px;
-       color: white;
-    }
+  background-color: transparent;
+  text-decoration: none;
+}
 
-    #menu2{
-       font-size: 15px; 
-       position: fixed;
-       top: 100px;
-       left: 1050px;
-       color: white;
-    }
+a:hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
-    #menu3{
-       font-size: 15px; 
-       position: fixed;
-       top: 130px;
-       left: 1050px;
-       color: white;
-    }
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
-    #menu4{
-       font-size: 15px; 
-       position: fixed;
-       top: 160px;
-       left: 1050px;
-       color: white;
-    }
-    </style>
+@media screen and (min-width:961px) {
+ .container{ font-size: medium; }
+  
+}
+@media screen and (min-width:721px) and (max-width:960px) {
+  .container { font-size: medium;  }
+  
+}
+@media screen and (max-width:720px) {
+  .container{
+  font-size: small; }
+  
+}
+
+</style>
 </head>
 <body>
-    
-    <video autoplay muted loop id="myVideo">
-        <source src="background.mp4" type="video/mp4">
-        <source src="background.mp4" type="video/ogg">
-        Your browser does not support the video tag.
-      </video>
-    <div>
-      <div>  
-      <header class="viewport-header">
-        <h1>
-          Sriman Thirunagaru  </br>
-          
-        </h1>
-        <p id="h2">Here is my home page</p>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="intro">
+        <div class="me">
+          <h1>Sriman Thirunagaru</h1>
+          <h4> <i>Something you will never be!</i></h4>
+        </div>
         
-      </header>
-      </div>
-      <div>
-      <!-- <i class="fa-address-card" ></i> -->
-      
-      <i class="fa-solid fa-user" id="menu1"> About me</i>
-      <i class="fa-solid fa-file" id="menu2"> <a href="Files/Sriman_Resume.pdf">Resume</a></i>
-      <i class="fa-solid fa-hashnode" id="menu3"> Hobbies</i>
-      <i class="fa-solid fa-briefcase" id="menu4"> Work</i>
+      </div>    
+
+    </div>
+    <div class="col-sm-3">
+      <div class="menu">
+        <ul class="list">
+          <li><i class="fa-solid fa-user">         About me</i></li>
+          <li><i class="fa-solid fa-file"> <a href="Files/Sriman_Resume.pdf">Resume</a></i></li>          
+          <li><i class="fa-solid fa-briefcase">              Work</i></li>
+          <li><i class="fa-solid fa-file">              Contact</i></li>      
+        </ul>
+        
       </div>
     </div>
-    
-</body>
-</html> 
+  </div>
 
+</div>
+
+
+
+
+
+</body>
+</html>
