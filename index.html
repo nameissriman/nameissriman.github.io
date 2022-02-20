@@ -75,28 +75,47 @@ li.dropdown {
 li.rightside{
   float: right;
 }
+
+@media screen and (min-width: 921px) {
+  .container{
+    font-size: medium;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 920px) {
+  .container{
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 720px) {
+  .container{
+    font-size: small;
+  }
+}
 </style>
 </head>
 <body>
-  <div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="Files/Sriman_Resume.pdf">Resume</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Assignments</a>
-        <div class="dropdown-content">
-          <a href="Assignment0/Assignment0.html">Assignment 0</a>
-          <a href="#">Assignment 1</a>
-          <a href="#">Assignment 2</a>
-        </div>
-      </li>
-      <li class="rightside"><a href="#">About me</a></li>
-    </ul>
+  <div class="container">
+    <div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="Files/Sriman_Resume.pdf">Resume</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Assignments</a>
+          <div class="dropdown-content">
+            <a href="Assignment0/Assignment0.html">Assignment 0</a>
+            <a href="#">Assignment 1</a>
+            <a href="#">Assignment 2</a>
+          </div>
+        </li>
+        <li class="rightside"><a href="#">About me</a></li>
+      </ul>
+    </div>  
+    <div class="intro"> 
+        <h1>Sriman Thirunagaru</h1>
+        <h3><i>Something you'll never be!</i></h3>
+    </div> 
   </div>  
-  <div class="intro"> 
-      <h1>Sriman Thirunagaru</h1>
-      <h3><i>Something you'll never be!</i></h3>
-  </div> 
 </body>
 </html>
 
